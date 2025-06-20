@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+* {
+  cursor: none !important;
+}
+
+body, html {
+  cursor: none;
+  scroll-behavior: smooth;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+.cursor {
+  position: fixed;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 250ms ease-out;
+}
+
+.outer {
+  border: 1px solid rgba(247, 247, 247, 0.4);
+}
+
+.inner {
+  background: rgba(247, 247, 247, 0.2);
+}
+
+.cursor.hover {
+  transform: translate(-50%, -50%) scale(2);
+}
+
+.cursor.inner.hover {
+  background: #f7f7f7;
+  mix-blend-mode: difference;
+}
+
+@theme{
+    --color-black-300:#a3a3a3;
+    --color-black-500:#525252;
+    --color-black-700:#262626;
+    --color-black-900:#0a0a0a;
+    --color-white-100:#E0E0E0;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(75px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.appear-block {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.appear-once {
+  animation: appear 1.5s ease-out forwards;
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  position: absolute;
+  left: max(calc(200px * 6), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.wrapper:hover .item {
+  animation-play-state: paused;
+}
+
+
+.item1 {
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}
