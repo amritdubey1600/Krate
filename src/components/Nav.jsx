@@ -51,7 +51,7 @@ const Nav = () => {
               onMouseEnter={addCursorHover} 
               onMouseLeave={removeCursorHover} 
               href="#projects"
-              className="px-4 lg:px-0 py-3 lg:py-0 hover:text-black hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200 border-b border-gray-100 lg:border-none last:border-none"
+              className="px-4 lg:px-0 py-3 lg:py-0 md:hover:text-black lg:hover:text-inherit hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200 border-b border-gray-100 lg:border-none last:border-none"
             >
               Project
             </a>
@@ -59,7 +59,7 @@ const Nav = () => {
               onMouseEnter={addCursorHover} 
               onMouseLeave={removeCursorHover} 
               href="#about"
-              className="px-4 lg:px-0 py-3 lg:py-0 hover:text-black hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200 border-b border-gray-100 lg:border-none last:border-none"
+              className="px-4 lg:px-0 py-3 lg:py-0 md:hover:text-black lg:hover:text-inherit hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200 border-b border-gray-100 lg:border-none last:border-none"
             >
               About
             </a>
@@ -67,7 +67,7 @@ const Nav = () => {
               onMouseEnter={addCursorHover} 
               onMouseLeave={removeCursorHover} 
               href="#team"
-              className="px-4 lg:px-0 py-3 lg:py-0 hover:text-black hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200 border-b border-gray-100 lg:border-none last:border-none"
+              className="px-4 lg:px-0 py-3 lg:py-0 md:hover:text-black lg:hover:text-inherit hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200 border-b border-gray-100 lg:border-none last:border-none"
             >
               Team
             </a>
@@ -75,7 +75,7 @@ const Nav = () => {
               onMouseEnter={addCursorHover} 
               onMouseLeave={removeCursorHover} 
               href="#CTA"
-              className="px-4 lg:px-0 py-3 lg:py-0 hover:text-black hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200 border-b border-gray-100 lg:border-none last:border-none"
+              className="px-4 lg:px-0 py-3 lg:py-0 md:hover:text-black lg:hover:text-inherit hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200 border-b border-gray-100 lg:border-none last:border-none"
             >
               Contact
             </a>
@@ -91,7 +91,7 @@ const Nav = () => {
         <div className="flex flex-col lg:flex-row lg:h-14">
           
           {/* Services Link */}
-          <div className="flex w-full hover:text-black lg:w-[543px] gap-1.5 lg:border-r justify-start lg:justify-center items-center px-4 lg:px-0 py-4 lg:py-0 hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200 border-b border-gray-100 lg:border-none">
+          <div className="flex w-full md:hover:text-black lg:hover:text-inherit lg:w-[543px] gap-1.5 lg:border-r justify-start lg:justify-center items-center px-4 lg:px-0 py-4 lg:py-0 hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200 border-b border-gray-100">
             <img src='assets/pencil-icon.png' alt='icon' className="w-4 h-4" />
             <a 
               onMouseEnter={addCursorHover} 
@@ -103,7 +103,7 @@ const Nav = () => {
           </div>
           
           {/* Get in Touch Link */}
-          <div className="flex hover:text-black w-full lg:w-[543px] gap-1.5 justify-start lg:justify-center items-center px-4 lg:px-0 py-4 lg:py-0 hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200">
+          <div className="flex md:hover:text-black lg:hover:text-inherit w-full lg:w-[543px] gap-1.5 justify-start lg:justify-center items-center px-4 lg:px-0 py-4 lg:py-0 hover:bg-gray-50 lg:hover:bg-transparent transition-colors duration-200">
             <img src="assets/calender-icon.png" alt='icon' className="w-4 h-4" />
             <a 
               onMouseEnter={addCursorHover} 

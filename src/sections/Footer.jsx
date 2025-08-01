@@ -61,13 +61,15 @@ const Footer = () => {
         </div>
 
         {/* Services */}
-        <div className="flex items-center justify-center gap-2 py-6 px-6 border-b hover:text-black border-white-100">
+        <div 
+          onMouseEnter={addCursorHover} 
+          onMouseLeave={removeCursorHover}
+          className="flex items-center justify-center gap-2 py-6 px-6 border-b border-white-100 hover:text-black hover:bg-gray-50 transition-colors duration-200"
+        >
           <img src='assets/pencil-icon.png' alt='icon' className="w-5 h-5" />
-          <a 
-            onMouseEnter={addCursorHover} 
-            onMouseLeave={removeCursorHover} 
+          <a  
             href="#services"
-            className="text-lg hover:text-gray-600 transition-colors duration-200"
+            className="text-lg"
           >
             Services
           </a>
@@ -135,7 +137,7 @@ const Footer = () => {
           <div className="flex h-26 border-b border-white-100">
             
             {/* Navigation Links */}
-            <div className="flex hover:text-black w-[494px] justify-center gap-8 items-center">
+            <div className="flex w-[494px] justify-center gap-8 items-center">
               <a onMouseEnter={addCursorHover} onMouseLeave={removeCursorHover} href="#projects">Project</a>
               <a onMouseEnter={addCursorHover} onMouseLeave={removeCursorHover} href="#about">About</a>
               <a onMouseEnter={addCursorHover} onMouseLeave={removeCursorHover} href="#team">Team</a>
@@ -152,13 +154,13 @@ const Footer = () => {
           <div className="flex h-26">
             
             {/* Services Link */}
-            <div className="flex hover:text-black w-[327px] gap-1.5 border-r border-white-100 justify-center items-center">
+            <div className="flex w-[327px] gap-1.5 border-r border-white-100 justify-center items-center">
               <img src='assets/pencil-icon.png' alt='icon' />
               <a onMouseEnter={addCursorHover} onMouseLeave={removeCursorHover} href="#services">Services</a>
             </div>
             
             {/* Social Icons */}
-            <div className="flex w-[327px] hover:text-black gap-3 border-r border-white-100 justify-center items-center">
+            <div className="flex w-[327px] gap-3 border-r border-white-100 justify-center items-center">
               <a href="#facebook" onMouseEnter={addCursorHover} onMouseLeave={removeCursorHover}>
                 <img src="assets/fb-icon.png" alt='Facebook' />
               </a>
