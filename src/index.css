@@ -5,7 +5,6 @@
 }
 
 body, html {
-  cursor: none;
   scroll-behavior: smooth;
   background-color: #0a0a0a;
   color: #fff;

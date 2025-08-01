@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import SplitType from 'split-type';          // 👈 free substitute
+import SplitType from 'split-type';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,11 +54,15 @@ const TextSection = () => {
   return (
     <>
       <section ref={sectionRef} id="about" className="relative">
-        <div className="max-w-7xl mx-auto h-screen flex justify-center items-center">
-          <p ref={textRef} className="text-stone-700 px-7 text-6xl whitespace-normal break-keep">
-            We are passionate about creating visually <br />
-            stunning and functional solutions that <br />
-            communicate effectively. I have a keen eye for detail and a deep understanding of design <br /> 
+        <div className="max-w-7xl mx-auto h-screen flex justify-center items-center px-4 sm:px-6 lg:px-8">
+          <p 
+            ref={textRef} 
+            className="text-stone-700 text-center leading-tight
+                       text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl
+                       max-w-md sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl"
+          >
+            We are passionate about creating visually stunning and functional solutions that 
+            communicate effectively. I have a keen eye for detail and a deep understanding of design 
             principles, which I use to deliver projects that exceed my clients' expectations.
           </p>
         </div>

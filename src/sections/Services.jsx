@@ -20,19 +20,25 @@ const Services = () => {
   });
 
   return (
-    <div ref={ref} id="services" className={`max-w-7xl mb-20 mx-auto appear-block ${visible ? "appear-once" : ""}`}>
+    <div 
+      ref={ref} 
+      id="services" 
+      className={`w-full max-w-7xl mb-12 sm:mb-16 md:mb-20 mx-auto px-4 sm:px-6 lg:px-8 appear-block ${visible ? "appear-once" : ""}`}
+    >
       <Heading Text="Our Services" />
-      <div className="h-3"></div>
-      {
-        services.map(service => 
-          <ServiceAccordian 
-            key={service.id}
-            name={service.name}
-            img1={`assets/service-${service.id}.png`}
-            img2={`assets/upscaled-services/service-${service.id}.png`}
-          />
-        )
-      }
+      <div className="h-2 sm:h-3 md:h-4"></div>
+      <div className="space-y-2 sm:space-y-3 md:space-y-4">
+        {
+          services.map(service => 
+            <ServiceAccordian 
+              key={service.id}
+              name={service.name}
+              img1={`assets/service-${service.id}.png`}
+              img2={`assets/upscaled-services/service-${service.id}.png`}
+            />
+          )
+        }
+      </div>
     </div>
   )
 }
